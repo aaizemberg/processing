@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+
+<script type="application/processing" data-processing-target="pjs">
+  void setup() {
+    size(500, 50);
+    colorMode(HSB, width);
+    for(int i=0; i < width; i++) {
+      stroke(i, width, width);
+      line(i, 0,i, width);
+    }
+  }
+</script>
+</head>
+
+<body>
+  <canvas id="pjs"></canvas>
+</body>
+
+</html>
